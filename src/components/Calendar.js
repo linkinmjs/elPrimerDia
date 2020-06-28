@@ -11,7 +11,7 @@ const CustomDivider = styled.div`
   left: 0;
   width: 100%;
   height: 40%;
-  background: #2c3e50;
+  background: #F2B544;
   z-index: 0;
   transform: skewY(10deg);
   transform-origin: top right;
@@ -24,9 +24,9 @@ const Calendar = () => {
             <Row>
                 <Col span={12} offset={6}>
                     
-                    <Divider orientation="left">Llevamos</Divider>
+                    <Divider style={{'color':'#1D3159'}} orientation="left">Llevamos</Divider>
                     <Days/>
-                    <Divider orientation="right">de cuarentena</Divider>
+                    <Divider style={{'color':'#1D3159'}} orientation="right">de cuarentena</Divider>
                 </Col>
             </Row>
         </Fragment>
