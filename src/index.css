@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Paleta de colores custom */
+.custom-color-1 { color: #1D3159; }
+.custom-color-2 { color: #1CA698; }
+.custom-color-3 { color: #F2B544; }
+.custom-color-4 { color: #F23D3D; }
+.custom-color-5 { color: #F2F2F2; }
