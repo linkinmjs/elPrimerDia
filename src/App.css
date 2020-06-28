@@ -1,1 +1,10 @@
 @import '~antd/dist/antd.css';
+
+body{
+    background-color: #F2F2F2;
+}
+
+ant-divider{
+    border-color: black
+}
+
