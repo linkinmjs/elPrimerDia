@@ -20,13 +20,16 @@ const CustomDivider = styled.div`
 const Calendar = () => {
     return ( 
             <Fragment>
-            <CustomDivider/>
-            <Row>
-                <Col span={12} offset={6}>
-                    
-                    <Divider style={{'color':'#1D3159'}} orientation="left">Llevamos</Divider>
+            {/* <CustomDivider/> */}
+            <Row justify="center" align="middle">
+                <Col span={4}>
+                    <Divider style={{'color':'#FFFFFF'}} orientation="right">Llevamos</Divider>
+                </Col>
+                <Col span={12}>
                     <Days/>
-                    <Divider style={{'color':'#1D3159'}} orientation="right">de cuarentena</Divider>
+                </Col>
+                <Col span={4}>
+                    <Divider style={{'color':'#FFFFFF'}} orientation="left">de cuarentena</Divider>
                 </Col>
             </Row>
         </Fragment>
