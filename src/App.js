@@ -1,21 +1,10 @@
-import React,{Fragment, useState, useEffect} from 'react';
-import Calendar from './components/Calendar';
-import Debug from './components/Debug';
+import React from "react";
 
-import './App.css';
+import Home from "./containers/Home/Home";
+import "./App.scss";
 
 function App() {
-
-  const [countryName, setCountryName] = useState({});
-  const [countryCode, setCountryCode] = useState({});
-
-
-  return (
-    <Fragment>
-      <Calendar/>
-      <Debug/>
-    </Fragment>
-  );
+  return <Home />;
 }
 
 export default App;
