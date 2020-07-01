@@ -3,24 +3,23 @@ import axios from 'axios';
 
 const Debug = () => {
 
-    const [ubication, setUbication] = useState({});
+    const [ubication, setUbication] = useState('');
 
-    useEffect(()=>{
-        
+    // Obtener ubicación
+    useEffect(()=>{        
         const consultarAPI = async() => {
-            
-            const url = 'http://gd.geobytes.com/GetCityDetails';
+            //API para obtener el IP: https://api.ipify.org?format=jsonp?callback=?
+            const url = `https://json.geoiplookup.io/`;
             
             const result = await axios.get(url);
 
-            setUbication(result.data);
+            setUbication(result.data.city);
         }
         consultarAPI();
-
     },[]);
 
     return ( 
-        <div className="debug">holas</div>
+        <div className="debug">Ubicación: {ubication}</div>
      );
 }
  

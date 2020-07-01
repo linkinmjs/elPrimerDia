@@ -3,7 +3,6 @@ import Calendar from './components/Calendar';
 import Debug from './components/Debug';
 import axios from 'axios';
 
-
 import './App.css';
 
 function App() {
