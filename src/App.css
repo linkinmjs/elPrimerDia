@@ -8,3 +8,8 @@ ant-divider{
     border-color: black
 }
 
+.debug{
+    color: green;
+    font-size: 3em;
+    font-family: "Lucida Console", Monaco, monospace;
+}
